@@ -6,12 +6,31 @@ namespace HelloWord
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your favourite food");
+            Console.WriteLine("WELCOME TO HAZARKHAWKK RESTAURANT");
+            Console.WriteLine("MENU");
+            Console.WriteLine("Foods: egg, cheese, lobster");
+            Console.WriteLine("Drinks: egg yolks, milk, mayo");
+
+            Console.Write("Choose a food from our menu:");
             string food = Console.ReadLine();
-            Console.WriteLine("Enter your favourite drink");
-            string drink = Console.ReadLine();
-            Console.WriteLine("The cook is making " + food + " for you.");
-            Console.WriteLine("They are also making " + drink + " for you");
+            if (food != "egg" && food != "cheese" && food != "lobster")
+            {
+                Console.WriteLine("Invalid, banned from restaurant.");
+            }
+            else
+            {
+                Console.Write("Choose a drink from our menu:");
+                string drink = Console.ReadLine();
+                if (drink != "egg yolks" && drink != "milk" && drink != "mayo")
+                {
+                    Console.WriteLine("Invalid, banned from restaurant.");
+                }
+                else
+                {
+                    Console.WriteLine("The cook is making " + food + " for you.");
+                    Console.WriteLine("They are also making " + drink + " for you");
+                }
+            }
         }
     }
 }
