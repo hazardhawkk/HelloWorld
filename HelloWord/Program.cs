@@ -11,7 +11,7 @@ namespace HelloWord
             Console.WriteLine("Enter your favourite drink");
             string drink = Console.ReadLine();
             Console.WriteLine("The cook is making " + food + " for you.");
-            Console.WriteLine("They are also making " + drink + " for youtewttwer");
+            Console.WriteLine("They are also making " + drink + " for you");
         }
     }
 }
